@@ -1,0 +1,15 @@
+{
+ "app":"frappe_ehs","doctype":"Sidebar","header_icon":"users","module":"EHS People","name":"People and Contractors","standard":1,"title":"People and Contractors",
+ "items":[
+  {"type":"Link","label":"Home","link_type":"Workspace","link_to":"People and Contractors","icon":"house"},
+  {"type":"Section Break","label":"Training and Competence","link_type":"DocType","icon":"graduation-cap","indent":1,"collapsible":1},
+  {"type":"Link","label":"Training Events","link_type":"DocType","link_to":"EHS Training Event","child":1},
+  {"type":"Link","label":"Training Courses","link_type":"DocType","link_to":"EHS Training Course","child":1},
+  {"type":"Link","label":"Training Register","link_type":"Report","link_to":"EHS Training Register","child":1},
+  {"type":"Section Break","label":"PPE Management","link_type":"DocType","icon":"hard-hat","indent":1,"collapsible":1,"keep_closed":1},
+  {"type":"Link","label":"PPE Issues","link_type":"DocType","link_to":"EHS PPE Issue","child":1},
+  {"type":"Link","label":"PPE Types","link_type":"DocType","link_to":"EHS PPE Type","child":1},
+  {"type":"Section Break","label":"Contractor Safety","link_type":"DocType","icon":"contact-round","indent":1,"collapsible":1,"keep_closed":1},
+  {"type":"Link","label":"Contractors","link_type":"DocType","link_to":"EHS Contractor","child":1}
+ ]
+}

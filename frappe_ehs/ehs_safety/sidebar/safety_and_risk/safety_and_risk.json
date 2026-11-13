@@ -1,0 +1,19 @@
+{
+ "app":"frappe_ehs","doctype":"Sidebar","header_icon":"shield-check","module":"EHS Safety","name":"Safety and Risk","standard":1,"title":"Safety and Risk",
+ "items":[
+  {"type":"Link","label":"Home","link_type":"Workspace","link_to":"Safety and Risk","icon":"house"},
+  {"type":"Section Break","label":"Incidents and Risk","link_type":"DocType","icon":"triangle-alert","indent":1,"collapsible":1},
+  {"type":"Link","label":"Incidents","link_type":"DocType","link_to":"EHS Incident","child":1},
+  {"type":"Link","label":"Risk Assessments","link_type":"DocType","link_to":"EHS Risk Assessment","child":1},
+  {"type":"Section Break","label":"Inspections","link_type":"DocType","icon":"clipboard-check","indent":1,"collapsible":1},
+  {"type":"Link","label":"Inspections","link_type":"DocType","link_to":"EHS Inspection","child":1},
+  {"type":"Section Break","label":"Permits and Change","link_type":"DocType","icon":"file-check","indent":1,"collapsible":1,"keep_closed":1},
+  {"type":"Link","label":"Work Permits","link_type":"DocType","link_to":"EHS Work Permit","child":1},
+  {"type":"Link","label":"Management of Change","link_type":"DocType","link_to":"EHS Management of Change","child":1},
+  {"type":"Section Break","label":"Chemical Safety","link_type":"DocType","icon":"flask-conical","indent":1,"collapsible":1,"keep_closed":1},
+  {"type":"Link","label":"Chemicals","link_type":"DocType","link_to":"EHS Chemical","child":1},
+  {"type":"Link","label":"Safety Data Sheets","link_type":"DocType","link_to":"EHS Safety Data Sheet","child":1},
+  {"type":"Section Break","label":"Ergonomics","link_type":"DocType","icon":"accessibility","indent":1,"collapsible":1,"keep_closed":1},
+  {"type":"Link","label":"Ergonomic Assessments","link_type":"DocType","link_to":"EHS Ergonomic Assessment","child":1}
+ ]
+}

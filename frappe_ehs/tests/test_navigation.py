@@ -16,13 +16,23 @@ class TestNavigation(UnitTestCase):
 				if item.get("link_type") == "DocType":
 					self.assertIn(item.get("link_to"), doctypes, workspace_path.name)
 
-	def test_dock_workspace_links_resolve(self):
-		workspaces = {
-			json.loads(path.read_text())["name"] for path in APP_ROOT.glob("ehs_*/workspace/*/*.json")
-		}
+	def test_dock_sidebar_links_resolve(self):
+		sidebars = {json.loads(path.read_text())["name"] for path in APP_ROOT.glob("ehs_*/sidebar/*/*.json")}
 		dock = json.loads((APP_ROOT / "dock/frappe_ehs/frappe_ehs.json").read_text())
 		for item in dock["items"]:
-			self.assertIn(item["link_to"], workspaces)
+			self.assertEqual(item["link_type"], "Sidebar")
+			self.assertIn(item["link_to"], sidebars)
+
+	def test_sidebar_links_resolve(self):
+		doctypes = {path.stem for path in APP_ROOT.glob("ehs_*/doctype/*/*.json")}
+		workspaces = {json.loads(path.read_text())["name"] for path in APP_ROOT.glob("ehs_*/workspace/*/*.json")}
+		reports = {json.loads(path.read_text())["name"] for path in APP_ROOT.glob("ehs_*/report/*/*.json")}
+		targets = {"DocType": doctypes, "Workspace": workspaces, "Report": reports}
+		for sidebar_path in APP_ROOT.glob("ehs_*/sidebar/*/*.json"):
+			sidebar = json.loads(sidebar_path.read_text())
+			for item in sidebar["items"]:
+				if item.get("type") == "Link" and item.get("link_type") in targets:
+					self.assertIn(item.get("link_to"), targets[item["link_type"]], sidebar_path.name)
 
 	def test_overview_references_shipped_cards(self):
 		cards = {json.loads(path.read_text())["name"] for path in APP_ROOT.glob("ehs_*/number_card/*/*.json")}

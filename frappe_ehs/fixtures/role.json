@@ -3,24 +3,28 @@
   "desk_access": 1,
   "doctype": "Role",
   "is_custom": 0,
-  "name": "EHS User"
+  "name": "EHS User",
+  "role_name": "EHS User"
  },
  {
   "desk_access": 1,
   "doctype": "Role",
   "is_custom": 0,
-  "name": "EHS Officer"
+  "name": "EHS Officer",
+  "role_name": "EHS Officer"
  },
  {
   "desk_access": 1,
   "doctype": "Role",
   "is_custom": 0,
-  "name": "EHS Manager"
+  "name": "EHS Manager",
+  "role_name": "EHS Manager"
  },
  {
   "desk_access": 1,
   "doctype": "Role",
   "is_custom": 0,
-  "name": "EHS Administrator"
+  "name": "EHS Administrator",
+  "role_name": "EHS Administrator"
  }
 ]

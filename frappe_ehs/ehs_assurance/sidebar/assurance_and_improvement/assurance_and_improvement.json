@@ -1,0 +1,15 @@
+{
+ "app":"frappe_ehs","doctype":"Sidebar","header_icon":"clipboard-check","module":"EHS Assurance","name":"Assurance and Improvement","standard":1,"title":"Assurance and Improvement",
+ "items":[
+  {"type":"Link","label":"Home","link_type":"Workspace","link_to":"Assurance and Improvement","icon":"house"},
+  {"type":"Section Break","label":"Audits","link_type":"DocType","icon":"clipboard-check","indent":1,"collapsible":1},
+  {"type":"Link","label":"Audits","link_type":"DocType","link_to":"EHS Audit","child":1},
+  {"type":"Section Break","label":"Findings and Corrective Actions","link_type":"DocType","icon":"list-checks","indent":1,"collapsible":1},
+  {"type":"Link","label":"Findings","link_type":"DocType","link_to":"EHS Finding","child":1},
+  {"type":"Link","label":"Actions","link_type":"DocType","link_to":"EHS Action","child":1},
+  {"type":"Link","label":"Overdue Actions","link_type":"Report","link_to":"EHS Overdue Actions","child":1},
+  {"type":"Section Break","label":"Legal Compliance","link_type":"DocType","icon":"file-check","indent":1,"collapsible":1,"keep_closed":1},
+  {"type":"Link","label":"Regulatory Permits","link_type":"DocType","link_to":"EHS Regulatory Permit","child":1},
+  {"type":"Link","label":"Expiring Permits","link_type":"Report","link_to":"EHS Expiring Permits","child":1}
+ ]
+}

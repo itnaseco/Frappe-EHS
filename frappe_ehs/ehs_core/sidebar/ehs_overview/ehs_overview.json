@@ -1,0 +1,22 @@
+{
+ "app": "frappe_ehs",
+ "doctype": "Sidebar",
+ "header_icon": "layout-dashboard",
+ "items": [
+  {"type":"Link","label":"Overview","link_type":"Workspace","link_to":"EHS Overview","icon":"house"},
+  {"type":"Section Break","label":"EHS Areas","link_type":"Workspace","icon":"layers-3","indent":1,"collapsible":1},
+  {"type":"Link","label":"Safety and Risk","link_type":"Workspace","link_to":"Safety and Risk","icon":"shield-check","child":1},
+  {"type":"Link","label":"People and Contractors","link_type":"Workspace","link_to":"People and Contractors","icon":"users","child":1},
+  {"type":"Link","label":"Environment and Sustainability","link_type":"Workspace","link_to":"Environment and Sustainability","icon":"leaf","child":1},
+  {"type":"Link","label":"Assurance and Improvement","link_type":"Workspace","link_to":"Assurance and Improvement","icon":"clipboard-check","child":1},
+  {"type":"Link","label":"EHS Setup","link_type":"Workspace","link_to":"EHS Setup","icon":"settings","child":1},
+  {"type":"Section Break","label":"My Work","link_type":"DocType","icon":"list-checks","indent":1,"collapsible":1,"keep_closed":1},
+  {"type":"Link","label":"Incidents","link_type":"DocType","link_to":"EHS Incident","icon":"triangle-alert","child":1},
+  {"type":"Link","label":"Findings","link_type":"DocType","link_to":"EHS Finding","icon":"search-check","child":1},
+  {"type":"Link","label":"Actions","link_type":"DocType","link_to":"EHS Action","icon":"circle-check-big","child":1}
+ ],
+ "module": "EHS Core",
+ "name": "EHS Overview",
+ "standard": 1,
+ "title": "EHS Overview"
+}

@@ -13,6 +13,12 @@ class TestSchema(UnitTestCase):
 			with self.subTest(path=path):
 				json.loads(path.read_text())
 
+	def test_role_fixtures_include_role_name(self):
+		roles = json.loads((APP_ROOT / "fixtures" / "role.json").read_text())
+		for role in roles:
+			with self.subTest(role=role["name"]):
+				self.assertEqual(role["role_name"], role["name"])
+
 	def test_optional_apps_are_not_hard_links(self):
 		optional_doctypes = {"Employee", "Supplier", "Item", "Asset", "Project"}
 		for path in APP_ROOT.glob("ehs_*/doctype/*/*.json"):
