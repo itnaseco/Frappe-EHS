@@ -1,0 +1,5 @@
+{
+ "doctype":"DocType","module":"EHS Setup","name":"EHS Inspection Template","autoname":"field:template_name","title_field":"template_name","track_changes":1,
+ "fields":[{"fieldname":"template_name","fieldtype":"Data","label":"Template Name","reqd":1,"unique":1},{"fieldname":"inspection_type","fieldtype":"Select","label":"Inspection Type","options":"Workplace\nEquipment\nEnvironmental\nContractor\nOther","reqd":1},{"default":"1","fieldname":"active","fieldtype":"Check","label":"Active"},{"fieldname":"items","fieldtype":"Table","label":"Items","options":"EHS Inspection Template Item","reqd":1}],
+ "permissions":[{"role":"EHS Officer","read":1},{"role":"EHS Manager","create":1,"read":1,"write":1},{"role":"EHS Administrator","create":1,"delete":1,"read":1,"write":1},{"role":"System Manager","create":1,"delete":1,"read":1,"write":1}]
+}

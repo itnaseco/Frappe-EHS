@@ -1,0 +1,18 @@
+{
+ "doctype":"Workspace","name":"EHS Overview","label":"EHS Overview","title":"EHS Overview","module":"EHS Core","app":"frappe_ehs","type":"Workspace","public":1,"is_hidden":0,"standard":1,"icon":"layout-dashboard","sequence_id":1,
+ "content":"[{\"id\":\"ehs-head\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>EHS Overview</b></span>\",\"col\":12}},{\"id\":\"ehs-n1\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"EHS Open Incidents\",\"col\":3}},{\"id\":\"ehs-n2\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"EHS Overdue Actions\",\"col\":3}},{\"id\":\"ehs-n3\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"EHS Active Work Permits\",\"col\":3}},{\"id\":\"ehs-n4\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"EHS Training This Month\",\"col\":3}},{\"id\":\"ehs-qh\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Quick Actions</b></span>\",\"col\":12}},{\"id\":\"ehs-s1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Report Incident\",\"col\":3}},{\"id\":\"ehs-s2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Inspection\",\"col\":3}},{\"id\":\"ehs-s3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Risk Assessment\",\"col\":3}},{\"id\":\"ehs-s4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Action\",\"col\":3}}]",
+ "number_cards":[{"label":"Open Incidents","number_card_name":"EHS Open Incidents"},{"label":"Overdue Actions","number_card_name":"EHS Overdue Actions"},{"label":"Active Work Permits","number_card_name":"EHS Active Work Permits"},{"label":"Training This Month","number_card_name":"EHS Training This Month"}],
+ "shortcuts":[
+  {"label":"Report Incident","link_to":"EHS Incident","type":"DocType","doc_view":"New","color":"Red"},
+  {"label":"New Inspection","link_to":"EHS Inspection","type":"DocType","doc_view":"New","color":"Blue"},
+  {"label":"New Risk Assessment","link_to":"EHS Risk Assessment","type":"DocType","doc_view":"New","color":"Orange"},
+  {"label":"New Action","link_to":"EHS Action","type":"DocType","doc_view":"New","color":"Green"}
+ ],
+ "sidebar_items":[
+  {"type":"Link","label":"Home","link_type":"Workspace","link_to":"EHS Overview","icon":"house","child":0,"collapsible":1,"indent":0,"keep_closed":0},
+  {"type":"Section Break","label":"My Work","icon":"list-checks","child":0,"collapsible":1,"indent":1,"keep_closed":0},
+  {"type":"Link","label":"Incidents","link_type":"DocType","link_to":"EHS Incident","child":1,"collapsible":1,"indent":0,"keep_closed":0},
+  {"type":"Link","label":"Actions","link_type":"DocType","link_to":"EHS Action","child":1,"collapsible":1,"indent":0,"keep_closed":0}
+ ],
+ "roles":[{"role":"EHS User"},{"role":"EHS Officer"},{"role":"EHS Manager"},{"role":"EHS Administrator"}]
+}

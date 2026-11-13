@@ -1,0 +1,5 @@
+{
+ "doctype":"DocType","module":"EHS Safety","name":"EHS Ergonomic Assessment","autoname":"format:EHS-ERG-{YYYY}-{#####}","track_changes":1,
+ "fields":[{"fieldname":"assessment_date","fieldtype":"Date","label":"Assessment Date","reqd":1,"search_index":1},{"fieldname":"site","fieldtype":"Link","label":"Site","options":"EHS Site","search_index":1},{"fieldname":"activity","fieldtype":"Data","label":"Activity","reqd":1},{"fieldname":"concern","fieldtype":"Small Text","label":"Concern","reqd":1},{"fieldname":"risk_level","fieldtype":"Select","label":"Risk Level","options":"Low\nMedium\nHigh\nCritical","reqd":1,"in_list_view":1},{"fieldname":"recommendation","fieldtype":"Small Text","label":"Recommendation"},{"default":"Open","fieldname":"status","fieldtype":"Select","label":"Status","options":"Open\nAction Required\nClosed","reqd":1,"in_list_view":1,"search_index":1}],
+ "permissions":[{"role":"EHS Officer","create":1,"read":1,"write":1},{"role":"EHS Manager","create":1,"delete":1,"read":1,"write":1},{"role":"EHS Administrator","create":1,"delete":1,"read":1,"write":1},{"role":"System Manager","create":1,"delete":1,"read":1,"write":1}]
+}

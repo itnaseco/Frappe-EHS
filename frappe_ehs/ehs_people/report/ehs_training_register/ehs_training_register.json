@@ -1,0 +1,1 @@
+{"doctype":"Report","name":"EHS Training Register","ref_doctype":"EHS Training Event","report_name":"EHS Training Register","report_type":"Script Report","is_standard":"Yes","module":"EHS People","roles":[{"role":"EHS Officer"},{"role":"EHS Manager"},{"role":"EHS Administrator"},{"role":"System Manager"}]}

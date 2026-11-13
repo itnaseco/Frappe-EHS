@@ -1,0 +1,5 @@
+{
+ "doctype":"DocType","module":"EHS Safety","name":"EHS Safety Data Sheet","autoname":"format:EHS-SDS-{YYYY}-{#####}","track_changes":1,
+ "fields":[{"fieldname":"chemical","fieldtype":"Link","label":"Chemical","options":"EHS Chemical","reqd":1,"in_list_view":1},{"fieldname":"version_date","fieldtype":"Date","label":"Version Date","reqd":1},{"fieldname":"review_date","fieldtype":"Date","label":"Review Date","search_index":1},{"fieldname":"file","fieldtype":"Attach","label":"SDS File","reqd":1},{"default":"Current","fieldname":"status","fieldtype":"Select","label":"Status","options":"Current\nReview Due\nSuperseded","reqd":1,"in_list_view":1,"search_index":1}],
+ "permissions":[{"role":"EHS User","read":1},{"role":"EHS Officer","create":1,"read":1,"write":1},{"role":"EHS Manager","create":1,"delete":1,"read":1,"write":1},{"role":"EHS Administrator","create":1,"delete":1,"read":1,"write":1},{"role":"System Manager","create":1,"delete":1,"read":1,"write":1}]
+}

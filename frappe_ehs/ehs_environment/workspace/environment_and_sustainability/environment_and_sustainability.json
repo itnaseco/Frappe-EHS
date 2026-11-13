@@ -1,0 +1,10 @@
+{
+ "doctype":"Workspace","name":"Environment and Sustainability","label":"Environment and Sustainability","title":"Environment and Sustainability","module":"EHS Environment","app":"frappe_ehs","type":"Workspace","public":1,"is_hidden":0,"standard":1,"icon":"leaf","sequence_id":4,"content":"[]",
+ "sidebar_items":[
+  {"type":"Link","label":"Home","link_type":"Workspace","link_to":"Environment and Sustainability","icon":"house","child":0,"collapsible":1,"indent":0,"keep_closed":0},
+  {"type":"Section Break","label":"Aspects and Impacts","icon":"leaf","child":0,"collapsible":1,"indent":1,"keep_closed":0},
+  {"type":"Link","label":"Environmental Aspects","link_type":"DocType","link_to":"EHS Environmental Aspect","child":1,"collapsible":1,"indent":0,"keep_closed":0},
+  {"type":"Section Break","label":"Measurements","icon":"chart-no-axes-column","child":0,"collapsible":1,"indent":1,"keep_closed":0},
+  {"type":"Link","label":"Environmental Measurements","link_type":"DocType","link_to":"EHS Environmental Measurement","child":1,"collapsible":1,"indent":0,"keep_closed":0}
+ ],"roles":[{"role":"EHS Officer"},{"role":"EHS Manager"},{"role":"EHS Administrator"}]
+}

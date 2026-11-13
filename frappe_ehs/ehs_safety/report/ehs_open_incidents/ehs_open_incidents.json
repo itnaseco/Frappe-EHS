@@ -1,0 +1,1 @@
+{"doctype":"Report","name":"EHS Open Incidents","ref_doctype":"EHS Incident","report_name":"EHS Open Incidents","report_type":"Script Report","is_standard":"Yes","module":"EHS Safety","roles":[{"role":"EHS Officer"},{"role":"EHS Manager"},{"role":"EHS Administrator"},{"role":"System Manager"}]}

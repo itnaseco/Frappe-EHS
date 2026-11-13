@@ -1,1 +1,6 @@
-Frappe Environment Health and Safety Management App
+EHS Core
+EHS Safety
+EHS People
+EHS Environment
+EHS Assurance
+EHS Setup

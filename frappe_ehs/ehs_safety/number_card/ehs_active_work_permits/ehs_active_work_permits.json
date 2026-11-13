@@ -1,0 +1,1 @@
+{"doctype":"Number Card","name":"EHS Active Work Permits","label":"Active Work Permits","type":"Document Type","document_type":"EHS Work Permit","function":"Count","filters_json":"[[\"EHS Work Permit\",\"status\",\"=\",\"Active\"]]","dynamic_filters_json":"[]","is_public":1,"is_standard":1,"module":"EHS Safety","show_percentage_stats":0,"stats_time_interval":"Monthly"}

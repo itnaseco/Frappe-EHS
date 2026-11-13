@@ -1,0 +1,13 @@
+{
+ "doctype":"Workspace","name":"Assurance and Improvement","label":"Assurance and Improvement","title":"Assurance and Improvement","module":"EHS Assurance","app":"frappe_ehs","type":"Workspace","public":1,"is_hidden":0,"standard":1,"icon":"clipboard-check","sequence_id":5,"content":"[]",
+ "sidebar_items":[
+  {"type":"Link","label":"Home","link_type":"Workspace","link_to":"Assurance and Improvement","icon":"house","child":0,"collapsible":1,"indent":0,"keep_closed":0},
+  {"type":"Section Break","label":"Audits","icon":"clipboard-check","child":0,"collapsible":1,"indent":1,"keep_closed":0},
+  {"type":"Link","label":"Audits","link_type":"DocType","link_to":"EHS Audit","child":1,"collapsible":1,"indent":0,"keep_closed":0},
+  {"type":"Section Break","label":"Findings and Actions","icon":"list-checks","child":0,"collapsible":1,"indent":1,"keep_closed":0},
+  {"type":"Link","label":"Findings","link_type":"DocType","link_to":"EHS Finding","child":1,"collapsible":1,"indent":0,"keep_closed":0},
+  {"type":"Link","label":"Actions","link_type":"DocType","link_to":"EHS Action","child":1,"collapsible":1,"indent":0,"keep_closed":0},
+  {"type":"Section Break","label":"Regulatory Permits","icon":"file-check","child":0,"collapsible":1,"indent":1,"keep_closed":1},
+  {"type":"Link","label":"Regulatory Permits","link_type":"DocType","link_to":"EHS Regulatory Permit","child":1,"collapsible":1,"indent":0,"keep_closed":0}
+ ],"roles":[{"role":"EHS Officer"},{"role":"EHS Manager"},{"role":"EHS Administrator"}]
+}

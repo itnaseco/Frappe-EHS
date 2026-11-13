@@ -1,0 +1,1 @@
+{"doctype":"Number Card","name":"EHS Open Incidents","label":"Open Incidents","type":"Document Type","document_type":"EHS Incident","function":"Count","filters_json":"[[\"EHS Incident\",\"status\",\"!=\",\"Closed\"]]","dynamic_filters_json":"[]","is_public":1,"is_standard":1,"module":"EHS Safety","show_percentage_stats":0,"stats_time_interval":"Monthly"}

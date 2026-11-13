@@ -4,6 +4,9 @@ app_publisher = "Matovu Matthew"
 app_description = "An App built for enterprises to manage EHS function"
 app_email = "matthew.matovu.lubega@gmail.com"
 app_license = "mit"
+required_apps = ["frappe"]
+app_logo_url = "/assets/frappe_ehs/images/frappe-ehs.svg"
+app_home = "/desk/ehs-overview"
 
 # Apps
 # ------------------
@@ -11,15 +14,23 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "frappe_ehs",
-# 		"logo": "/assets/frappe_ehs/logo.png",
-# 		"title": "Frappe Environment EHS",
-# 		"route": "/frappe_ehs",
-# 		"has_permission": "frappe_ehs.api.permission.has_app_permission",
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": app_name,
+		"logo": app_logo_url,
+		"title": app_title,
+		"route": app_home,
+		"has_permission": "frappe_ehs.permissions.has_app_permission",
+		"sequence_id": 12,
+	}
+]
+
+fixtures = [
+	{"dt": "Role", "filters": [["name", "in", ["EHS User", "EHS Officer", "EHS Manager", "EHS Administrator"]]]},
+	"Workspace",
+	"Report",
+	"Number Card",
+]
 
 # The dock, the rail down the left of the desk, is a document rather than a hook. Author it in
 # Manage Dock on a developer-mode site and press Export to App, and it is written to
@@ -276,4 +287,3 @@ app_license = "mit"
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
-

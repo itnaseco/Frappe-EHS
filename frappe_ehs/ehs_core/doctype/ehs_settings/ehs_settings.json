@@ -1,0 +1,15 @@
+{
+ "doctype": "DocType",
+ "issingle": 1,
+ "module": "EHS Core",
+ "name": "EHS Settings",
+ "fields": [
+  {"fieldname": "default_site", "fieldtype": "Link", "label": "Default Site", "options": "EHS Site"},
+  {"default": "30", "fieldname": "default_action_days", "fieldtype": "Int", "label": "Default Action Days"},
+  {"default": "30", "fieldname": "permit_warning_days", "fieldtype": "Int", "label": "Permit Warning Days"}
+ ],
+ "permissions": [
+  {"role": "EHS Administrator", "read": 1, "write": 1},
+  {"role": "System Manager", "read": 1, "write": 1}
+ ]
+}

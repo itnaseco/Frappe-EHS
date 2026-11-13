@@ -1,0 +1,11 @@
+{
+ "app":"frappe_ehs","doctype":"Dock","name":"frappe_ehs","standard":1,"user":"",
+ "items":[
+  {"added":1,"hidden":0,"icon":"layout-dashboard","link_to":"EHS Overview","link_type":"Sidebar","title":"Overview"},
+  {"added":1,"hidden":0,"icon":"shield-check","link_to":"Safety and Risk","link_type":"Sidebar","title":"Safety and Risk"},
+  {"added":1,"hidden":0,"icon":"users","link_to":"People and Contractors","link_type":"Sidebar","title":"People and Contractors"},
+  {"added":1,"hidden":0,"icon":"leaf","link_to":"Environment and Sustainability","link_type":"Sidebar","title":"Environment"},
+  {"added":1,"hidden":0,"icon":"clipboard-check","link_to":"Assurance and Improvement","link_type":"Sidebar","title":"Assurance"},
+  {"added":1,"hidden":0,"icon":"settings","link_to":"EHS Setup","link_type":"Sidebar","title":"Setup"}
+ ]
+}

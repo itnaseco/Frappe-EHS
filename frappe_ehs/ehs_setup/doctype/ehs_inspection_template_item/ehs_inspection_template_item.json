@@ -1,0 +1,1 @@
+{"doctype":"DocType","module":"EHS Setup","name":"EHS Inspection Template Item","istable":1,"fields":[{"fieldname":"item","fieldtype":"Data","label":"Item","reqd":1,"in_list_view":1},{"fieldname":"guidance","fieldtype":"Small Text","label":"Guidance"},{"fieldname":"requires_evidence","fieldtype":"Check","label":"Requires Evidence"}]}

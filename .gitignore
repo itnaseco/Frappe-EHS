@@ -53,3 +53,13 @@ jspm_packages/
 
 # Aider AI Chat
 .aider*
+
+# Local planning and agent artifacts
+/openspec/changes/*
+!/openspec/changes/archive/
+!/openspec/changes/archive/.gitkeep
+/.agents/
+/.codex/
+
+# Local EHS discussion and specification documents
+/docs/

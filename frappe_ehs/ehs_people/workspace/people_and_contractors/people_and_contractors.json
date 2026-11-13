@@ -1,0 +1,14 @@
+{
+ "doctype":"Workspace","name":"People and Contractors","label":"People and Contractors","title":"People and Contractors","module":"EHS People","app":"frappe_ehs","type":"Workspace","public":1,"is_hidden":0,"standard":1,"icon":"users","sequence_id":3,"content":"[]",
+ "sidebar_items":[
+  {"type":"Link","label":"Home","link_type":"Workspace","link_to":"People and Contractors","icon":"house","child":0,"collapsible":1,"indent":0,"keep_closed":0},
+  {"type":"Section Break","label":"Training and Competence","icon":"graduation-cap","child":0,"collapsible":1,"indent":1,"keep_closed":0},
+  {"type":"Link","label":"Training Events","link_type":"DocType","link_to":"EHS Training Event","child":1,"collapsible":1,"indent":0,"keep_closed":0},
+  {"type":"Link","label":"Training Courses","link_type":"DocType","link_to":"EHS Training Course","child":1,"collapsible":1,"indent":0,"keep_closed":0},
+  {"type":"Section Break","label":"PPE Management","icon":"hard-hat","child":0,"collapsible":1,"indent":1,"keep_closed":1},
+  {"type":"Link","label":"PPE Issues","link_type":"DocType","link_to":"EHS PPE Issue","child":1,"collapsible":1,"indent":0,"keep_closed":0},
+  {"type":"Link","label":"PPE Types","link_type":"DocType","link_to":"EHS PPE Type","child":1,"collapsible":1,"indent":0,"keep_closed":0},
+  {"type":"Section Break","label":"Contractor Safety","icon":"contact-round","child":0,"collapsible":1,"indent":1,"keep_closed":1},
+  {"type":"Link","label":"Contractors","link_type":"DocType","link_to":"EHS Contractor","child":1,"collapsible":1,"indent":0,"keep_closed":0}
+ ],"roles":[{"role":"EHS Officer"},{"role":"EHS Manager"},{"role":"EHS Administrator"}]
+}

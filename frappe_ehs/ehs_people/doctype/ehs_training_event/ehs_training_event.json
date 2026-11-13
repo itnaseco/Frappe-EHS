@@ -1,0 +1,5 @@
+{
+ "doctype":"DocType","module":"EHS People","name":"EHS Training Event","autoname":"format:EHS-TRN-{YYYY}-{#####}","track_changes":1,
+ "fields":[{"fieldname":"course","fieldtype":"Link","label":"Course","options":"EHS Training Course","reqd":1,"in_list_view":1},{"fieldname":"training_date","fieldtype":"Date","label":"Training Date","reqd":1,"in_list_view":1,"search_index":1},{"fieldname":"site","fieldtype":"Link","label":"Site","options":"EHS Site","search_index":1},{"fieldname":"trainer","fieldtype":"Data","label":"Trainer"},{"default":"Planned","fieldname":"status","fieldtype":"Select","label":"Status","options":"Planned\nCompleted\nCancelled","reqd":1,"in_list_view":1,"search_index":1},{"fieldname":"attendees","fieldtype":"Table","label":"Attendees","options":"EHS Training Attendee"}],
+ "permissions":[{"role":"EHS User","read":1},{"role":"EHS Officer","create":1,"read":1,"write":1},{"role":"EHS Manager","create":1,"delete":1,"read":1,"write":1,"report":1},{"role":"EHS Administrator","create":1,"delete":1,"read":1,"write":1,"report":1},{"role":"System Manager","create":1,"delete":1,"read":1,"write":1,"report":1}]
+}

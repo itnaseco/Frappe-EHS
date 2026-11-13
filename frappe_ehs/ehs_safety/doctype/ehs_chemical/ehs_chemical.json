@@ -1,0 +1,5 @@
+{
+ "doctype":"DocType","module":"EHS Safety","name":"EHS Chemical","autoname":"field:chemical_name","title_field":"chemical_name","track_changes":1,
+ "fields":[{"fieldname":"chemical_name","fieldtype":"Data","label":"Chemical Name","reqd":1,"unique":1},{"fieldname":"manufacturer","fieldtype":"Data","label":"Manufacturer"},{"fieldname":"item_code","fieldtype":"Data","label":"Item Code"},{"fieldname":"hazard_summary","fieldtype":"Small Text","label":"Hazard Summary","reqd":1},{"default":"1","fieldname":"active","fieldtype":"Check","label":"Active","in_list_view":1}],
+ "permissions":[{"role":"EHS User","read":1},{"role":"EHS Officer","create":1,"read":1,"write":1},{"role":"EHS Manager","create":1,"delete":1,"read":1,"write":1},{"role":"EHS Administrator","create":1,"delete":1,"read":1,"write":1},{"role":"System Manager","create":1,"delete":1,"read":1,"write":1}]
+}

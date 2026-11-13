@@ -1,0 +1,21 @@
+{
+ "doctype": "DocType",
+ "module": "EHS Core",
+ "name": "EHS Hazard",
+ "autoname": "field:hazard_name",
+ "title_field": "hazard_name",
+ "track_changes": 1,
+ "fields": [
+  {"fieldname": "hazard_name", "fieldtype": "Data", "in_list_view": 1, "label": "Hazard Name", "reqd": 1, "unique": 1},
+  {"fieldname": "category", "fieldtype": "Select", "in_list_view": 1, "label": "Category", "options": "Physical\nChemical\nBiological\nMechanical\nElectrical\nErgonomic\nPsychosocial\nEnvironmental\nOther", "reqd": 1},
+  {"fieldname": "description", "fieldtype": "Small Text", "label": "Description"},
+  {"default": "1", "fieldname": "active", "fieldtype": "Check", "in_list_view": 1, "label": "Active"}
+ ],
+ "permissions": [
+  {"role": "EHS User", "read": 1},
+  {"role": "EHS Officer", "create": 1, "read": 1, "write": 1},
+  {"role": "EHS Manager", "create": 1, "delete": 1, "read": 1, "write": 1},
+  {"role": "EHS Administrator", "create": 1, "delete": 1, "read": 1, "write": 1},
+  {"role": "System Manager", "create": 1, "delete": 1, "read": 1, "write": 1}
+ ]
+}

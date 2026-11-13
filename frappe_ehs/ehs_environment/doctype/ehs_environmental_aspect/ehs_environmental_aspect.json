@@ -1,0 +1,5 @@
+{
+ "doctype":"DocType","module":"EHS Environment","name":"EHS Environmental Aspect","autoname":"field:aspect_name","title_field":"aspect_name","track_changes":1,
+ "fields":[{"fieldname":"aspect_name","fieldtype":"Data","label":"Aspect Name","reqd":1,"unique":1},{"fieldname":"site","fieldtype":"Link","label":"Site","options":"EHS Site","search_index":1},{"fieldname":"activity","fieldtype":"Data","label":"Activity","reqd":1},{"fieldname":"impact","fieldtype":"Small Text","label":"Impact","reqd":1},{"fieldname":"significance","fieldtype":"Select","label":"Significance","options":"Low\nMedium\nHigh\nCritical","reqd":1,"in_list_view":1},{"fieldname":"controls","fieldtype":"Small Text","label":"Controls"},{"default":"1","fieldname":"active","fieldtype":"Check","label":"Active","in_list_view":1}],
+ "permissions":[{"role":"EHS User","read":1},{"role":"EHS Officer","create":1,"read":1,"write":1},{"role":"EHS Manager","create":1,"delete":1,"read":1,"write":1,"report":1},{"role":"EHS Administrator","create":1,"delete":1,"read":1,"write":1,"report":1},{"role":"System Manager","create":1,"delete":1,"read":1,"write":1,"report":1}]
+}
