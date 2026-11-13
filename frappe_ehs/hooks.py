@@ -1,5 +1,5 @@
 app_name = "frappe_ehs"
-app_title = "Frappe Environment Health and Safety Management App"
+app_title = "Frappe EHS"
 app_publisher = "Matovu Matthew"
 app_description = "An App built for enterprises to manage EHS function"
 app_email = "matthew.matovu.lubega@gmail.com"
@@ -15,7 +15,7 @@ app_license = "mit"
 # 	{
 # 		"name": "frappe_ehs",
 # 		"logo": "/assets/frappe_ehs/logo.png",
-# 		"title": "Frappe Environment Health and Safety Management App",
+# 		"title": "Frappe Environment EHS",
 # 		"route": "/frappe_ehs",
 # 		"has_permission": "frappe_ehs.api.permission.has_app_permission",
 # 	}
